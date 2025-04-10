@@ -1,0 +1,54 @@
+
+{
+   "blogs":[
+    {
+      "id":1,
+      "title":"You and Me",
+       "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+     "author":"yoshi"
+    },
+    {
+     "id":2,
+     "title":"All for One",
+       "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+     "author":"Jishu"
+    },
+    {
+     "id":3,
+      "title":"Solo Leveling",
+       "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+      "author":"Shu"
+    },
+    {
+      "id":4,
+      "title":"Weak Class",
+      "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+      "author":"Shima"
+    },
+    {
+      "id":5,
+      "title":"Our Quirks",
+      "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+      "author":"Kosha"
+    },
+    {
+      "id":6,
+      "title":"Deku Power",
+      "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+      "author":"Kosma"
+    },
+    {
+      "id":7,
+      "title":"Quirks God's",
+      "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+      "author":"Koshi"
+    },
+    {
+      "id":8,
+      "title":"Quirks God's",
+      "body":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus voluptatum reiciendis quam adipisci numquam perspiciatis excepturi dolorem fugiat sequi.",
+      "author":"Koshi"
+    }
+  ]
+
+}
