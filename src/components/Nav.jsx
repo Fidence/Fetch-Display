@@ -9,7 +9,9 @@ const Navbar = () => {
 
         <nav className='nav-list'>
             <li>Home</li>
+            <li>About</li>
             <li>Newblog</li>
+            <li>Contact</li>
          
         </nav>
         </header>

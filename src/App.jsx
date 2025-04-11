@@ -1,44 +1,65 @@
-import { useState, useEffect, } from 'react'
+import React from 'react'
 
 import './App.css'
 import ListComponent from './components/ListComponent'
 import Navbar from './components/Nav'
+import useFetch from './components/useFetch'
 
 function App() {
+  const {datas, isPending, err, setData} = useFetch("http://jsonplaceholder.typicode.com/posts");
   
-  const [datas, setData] = useState([])
-  const [isPending, setIsPending] = useState(true)
-  const [err, setErr] = useState()
- 
 
-  useEffect(() => {
-  const fetchData = async () => {
-    setTimeout(async () => {
-      try {
-        const res = await fetch("http://jsonplaceholder.typicode.com/posts");
-        if(!res.ok){
-          throw Error("couldn't catch data")
-        }         
-        const data = await res.json();
-        setData(data);
-        setIsPending(false);
+  //   const hasRun = useRef(false);
+
+//   useEffect(() => {
+
+//   if (hasRun.current) return;
+//   hasRun.current = true;
+
+//   const fetchData = async () => {
+//     setTimeout(async () => {
+//       try {
+//         const res = await fetch("http://localhost:8000/blogs");
+//         const data = await res.json();
+//         setCounts(data);
+//         setIsPending(false);
+//       } catch (err) {
+//         console.log(err);
+//         setIsPending(false);
+//       }
+//     }, 1000);
+//   };
+
+//   fetchData();
+// }, []);
+
+
+
+//  useEffect(() => {
+//     setTimeout(()=>{
+
+//       fetch("http://localhost:8000/blogs")
+//       .then(res=>{
+//         return res.json()
+//       })
+//       .then(data=>{
+//         return setCounts(data);
+//       })
+//       setIsPending(false)
+//       .catch(err =>{
+//         console.log(err)
+//       });
         
-      } catch (err) {
-        setErr(err.message);
-        setIsPending(false);
-      }
-    }, 1000);
-  };
+//     }, 1000)
+// }, []);
 
-  fetchData();
-}, []);
 
 
   return (
     <>
      <Navbar/>
      <div>
-     <ListComponent datas={datas} setData={setData} isPending={isPending} err={err}/>
+     <ListComponent datas={datas} isPending={isPending} err={err} setData={setData}/>
      </div>
       
     </>
